@@ -1,0 +1,132 @@
+.topbar{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: outset;
+    border-color: rgb(192, 192, 192);
+    color: #333;
+}
+.wrapper{
+    padding: 10px 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+}
+.lbl{
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.cart-img{
+    width: 3.5vw;
+    height:  3vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cart-btn{
+    width: 3.5vw;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cart-img:hover {
+    box-shadow: 0px 2px rgb(136, 136, 136);
+}
+.nav-bt{
+    border-radius: 10px;
+    padding: 10px 0px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+    color: #333;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+}
+.nav-bt:hover {
+    box-shadow: 0px 2px rgb(136, 136, 136);
+}
+@media screen and (max-width: 1550px){
+    .cart-img{
+        width: 6vw;
+        height:  6vw;
+    } 
+}
+@media screen and (max-width: 1050px){
+    .lbl > h1{
+        font-size: 52px;
+        width: 22vw;
+    }
+    .cart-img{
+        width: 7vw;
+        height:  7vw;
+    } 
+}
+
+@media screen and (max-width: 975px){
+    .lbl > h1{
+        font-size: 35px;
+        width: 22vw;
+
+    }
+    .cart-btn{
+        width: 5vw;
+        height: 10vw;
+    }
+    .cart-img{
+        width: 7vw;
+        height:  7vw;
+        border-radius: 10px;
+        cursor: pointer;
+    }    
+    .right > a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 840px){
+    .lbl > h1{
+        display: none;
+    }
+    .cart-img{
+        width: 7vw;
+        height:  7vw;
+    }
+}
+@media screen and (max-width: 660px){
+    .lbl > h1{
+        display: none;
+    }
+    .cart-img{
+        width: 7vw;
+        height:  7vw;
+    }
+}
+@media screen and (max-width: 450px){
+    .topbar{
+        height: 50px;
+    }
+    .wrapper{
+        padding: 0;
+    }
+    .right > .nav-bt{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .cart-img{
+        width: 7vw;
+        height:  7vw;
+    }
+}

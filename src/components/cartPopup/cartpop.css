@@ -1,0 +1,180 @@
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner{
+    display: flex;
+    position: relative;
+    height: 100%;
+    max-height: 720px;
+    width: 100%;
+    max-width: 950px;
+    border-style: solid;
+    border-radius: 10px 10px;
+}
+.popup-inner .close-btn {
+    position: absolute;
+    height: 5%;
+    width: 10%;
+    top: 16px;
+    right: 16px;
+}
+.p-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1.3;
+    flex-wrap: wrap;
+    /*background-color: rgb(217, 217, 217);*/
+    background-color: whitesmoke;
+    border-radius: 10px 0 0 10px ;
+}
+
+.p-item-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 30px;
+    height: 15%;
+    border-style: solid;
+    border-radius: 10px 10px;
+}
+.p-item-icon{
+    margin-right: 2.5vw;
+    width: 15%;
+    height: 50%;
+}
+.p-item-name{
+    margin-left: .5vw;
+    font-size: 22px;
+}
+.p-item-count{
+    margin-left: 2vw;
+    font-size: 20px;
+    font-weight: 500;
+}
+.p-item-btn{
+    margin-left: 3vw;
+    width: 20%;
+    height: 28%;
+}
+.p-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .7;
+    background-color: whitesmoke;
+    border-radius: 0 10px 10px 0;
+}
+.payment-cont{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    justify-content: center;
+    width: 80%;
+    height: 8%;
+    background-color: #fff;
+    margin-top: 22vw;
+    border-style: solid;
+    border-radius: 10px 10px;
+}
+.p-product-price{
+    font-size: 19px;
+    font-weight: 400;
+}
+.p-total-price1{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 14px 5px 0 5px;
+}
+.p-total-price{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+@media screen and (max-width: 1100px){
+    .popup{
+        top: 100px;
+        left: 10vw;
+        width: 80%;
+        height: 70vh;
+    }
+    .p-item-btn{
+        width: 30%;
+    }
+    .payment-cont{
+        height: 8%;
+        width: 90%;
+    }
+    .p-total-price1{
+        font-size: 22px;
+    }
+    .p-total-price{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 750px){
+    .popup{
+        top: 100px;
+        left: 13vw;
+        width: 80%;
+        height: 55vh;
+    }
+    .p-item-btn{
+        font-size: 12px;
+    }
+    .close-btn{
+        font-size: 12px;
+    }
+    .p-total-price{
+        font-size: 12px;
+    }
+    .p-total-price1{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 610px){
+    .p-item-name{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .p-item-count{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .close-btn{
+        font-size: 8px;
+    }
+    .p-item-btn{
+        font-size: 8px;
+    }
+    .p-item-name{
+        font-size: 10px;
+    }
+    .p-item-count{
+        font-size: 10px;
+    }
+    .p-total-price{
+        font-size: 8px;
+    }
+    .p-total-price1{
+        margin-top: 15px;
+        font-size: 8px;
+    }
+}

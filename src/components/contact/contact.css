@@ -1,0 +1,99 @@
+.contact{
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+}
+.leftSide{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    border-radius: 30px;
+    margin-left: 5vw;
+    height: 100vh;
+}
+.rightSide{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.rightForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 50vh;
+    margin-bottom: 12vh;
+    border-radius: 30px;
+    box-shadow: 15px 15px 8px 8px #333;
+    background-color: white;
+}
+.h2Tag{
+    margin-bottom: 10px;
+}
+input{
+    width: 50%;
+    height: 5%;
+    font-size: 21px;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(228, 228, 228);
+}
+textarea{
+    width: 53%;
+    height: 35%;
+    font-size: 21px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(228, 228, 228);
+}
+
+button{
+    width: 30%;
+    height: 7%;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(228, 228, 228);
+}
+#showH3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5%;
+    display: none;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 910px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftSide{
+        display: none;
+    }
+    .rightForm{
+        width: 50vw;
+        height: 60vh;
+        margin-bottom: 15vh;
+    }
+}
+@media screen and (max-width: 450px){
+    
+    .rightForm{
+        width: 70vw;
+    }
+}
